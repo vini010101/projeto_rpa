@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Usuarios Usuários</title>
+</head>
+<body>
+    <h1>Lista de Usuários</h1>
+    <ul>
+        {% for user in users %}
+            <li>{{ user.cpf_cnpj }} - {{ user.invoice_value }} - {{ user.invoice_date }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
